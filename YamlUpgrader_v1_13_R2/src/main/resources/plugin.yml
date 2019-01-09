@@ -1,0 +1,19 @@
+name: YamlUpgrader
+main: me.recursiveg.yamlupgrader.Main
+description: ""
+version: 0.1
+depend: []
+softdepend: []
+authors: [RecursiveG]
+api-version: 1.13
+commands:
+  yu:
+    description: YamlUpgrader
+    permission: yu.command
+    permission-message: "You do not have the required permission: <permission>"
+    usage: "/yu <tonbt|toyaml> <config_filename>"
+
+permissions:
+  cu.command:
+    description: Base permission node for YamlUpgrader
+    default: op
