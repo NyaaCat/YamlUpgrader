@@ -42,7 +42,7 @@ public class Main extends JavaPlugin {
                         }
                     }
 
-                    cfgIn.save(new File(getDataFolder(), filename + "-nbt112R1.yaml"));
+                    cfgIn.save(new File(getDataFolder(), filename + "-nbt112R1.yml"));
                 } else if ("toyaml".equalsIgnoreCase(args[0])) {
                     for (String key : cfgIn.getKeys(true)) {
                         NbtItemStack nbt = cfgIn.getSerializable(key, NbtItemStack.class);
@@ -50,7 +50,7 @@ public class Main extends JavaPlugin {
                             cfgIn.set(key, nbt.it);
                         }
                     }
-                    cfgIn.save(new File(getDataFolder(), filename + "-yaml112R1.yaml"));
+                    cfgIn.save(new File(getDataFolder(), filename + "-yaml112R1.yml"));
                 } else {
                     return false;
                 }
